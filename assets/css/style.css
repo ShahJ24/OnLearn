@@ -1,0 +1,489 @@
+@import url("font-awesome/css/font-awesome.min.css");
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff !important;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #abacae;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 38px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif, sans-serif;
+}
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  font-size: 14px;
+  color: #232424;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  color: black;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-common {
+  background-color: #abacae;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  scroll-behavior: smooth;
+}
+
+.btn-common:hover {
+  color: #fff;
+  background-color: rgb(73, 65, 65);
+  box-shadow: 0 6px 22px rgba(46, 35, 35, 0.1);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.btn-border {
+  color: #3d60f4;
+  background-color: transparent;
+  border: 1px solid #3d60f4;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.btn-border:hover {
+  color: #fff;
+  border-color: #3d60f4;
+  background-color: #3d60f4;
+}
+
+.btn-border:focus {
+  color: #fff;
+  border-color: #3d60f4;
+  background-color: #3d60f4;
+}
+
+.btn-lg {
+  padding: 14px 33px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.btn-rm {
+  padding: 7px 18px;
+  text-transform: capitalize;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+ul,
+ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+/* Container */
+
+.heading {
+  padding-left: 30px;
+}
+
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+}
+
+.top-nav-collapse {
+  background: #fff;
+  z-index: 999999;
+  top: 0px !important;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  background: #fff !important;
+}
+
+.top-nav-collapse .navbar-brand {
+  top: 0px;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+  color: #585b60 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+  cursor: pointer;
+  color: #3d60f4 !important;
+}
+
+.top-nav-collapse .navbar-nav li.active a.nav-link {
+  color: #3d60f4 !important;
+}
+
+.menu-bg {
+  background: transparent;
+}
+
+.bg-inverse {
+  background: rgb(252, 252, 252) !important;
+  box-shadow: 0px 3px 4px 3px rgb(0 0 0 / 6%);
+}
+.navbar-expand-md .navbar-nav .nav-link i {
+  font-size: 14px;
+  margin-left: 5px;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  font-family: "Titillium Web", sans-serif;
+  color: #585b60;
+  font-weight: 600;
+  padding: 8px 10px;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-md .navbar-nav li a:hover,
+.navbar-expand-md .navbar-nav li .active > a,
+.navbar-expand-md .navbar-nav li a:focus {
+  color: #3d60f4;
+  outline: none;
+}
+
+.navbar-expand-md .navbar-nav .active > .nav-link,
+.navbar-expand-md .navbar-nav .nav-link.active,
+.navbar-expand-md .navbar-nav .nav-link.open,
+.navbar-expand-md .navbar-nav .open > .nav-link {
+  color: #3d60f4 !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:focus,
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  color: #3d60f4 !important;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar li.active a.nav-link {
+  color: #3d60f4;
+}
+
+.menu-white .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* ==========================================================================
+Home Page
+========================================================================== */
+#home-page {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+#home-page .contents {
+  padding: 120px 0px 30px;
+  display: -webkit-box;
+}
+
+#home-page .contents .head-title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#home-page .contents p {
+  color: black;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.home-page-style {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
+}
+
+#home-page img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+/* ==========================================================================
+Course Services Item
+========================================================================== */
+
+.course-services-item {
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.course-services-item .course-services-content h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #232424;
+  cursor: default;
+}
+
+.course-services-item:hover {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+#course-service {
+  position: relative;
+}
+
+/* ==========================================================================
+FAQ's
+========================================================================== */
+
+.accordian_wrapper {
+  padding: 1em 0 0.5em 0;
+  margin: 70px 0;
+}
+
+.inner h5 {
+  margin-top: 20px;
+  color: #1e3f2f;
+  font-weight: 800;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 65em;
+}
+
+#_accordion {
+  width: 100%;
+  padding: 12px 0 0 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-shadow: 05px 05px 12px #b3b3b3;
+  font-family: Lato, Open Sans;
+}
+
+#_accordion h2 {
+  margin-top: 15px auto 5px auto;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: 1px solid #2e4053;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+  border-left: 6px solid #2e4053;
+}
+
+.panel {
+  padding: 5px 18px;
+  margin-top: 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+/* ==========================================================================
+Our Clients
+========================================================================== */
+
+.client-item-wrapper {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.client-item-wrapper img {
+  opacity: 2.1;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+
+.client-item-wrapper:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* ==========================================================================
+Footer and Copyright
+========================================================================== */
+
+.copyright {
+  background: rgb(2, 53, 2);
+  padding: 15px;
+}
+
+.copyright p {
+  color: #fff;
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+.copyright p a {
+  color: #fff;
+}
+
+.copyright p a:hover {
+  color: #b4f18a;
+}
+
+.social-icon a {
+  color: rgb(56, 56, 56);
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 4px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.social-icon a:hover {
+  color: rgb(8, 148, 31) !important;
+}
+
+.contact-right {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ScrollToTop */
+a.back-to-top {
+  display: block;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+a.back-to-top i {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: rgb(48, 99, 38);
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top:hover,
+a.back-to-top:focus {
+  text-decoration: none;
+}
